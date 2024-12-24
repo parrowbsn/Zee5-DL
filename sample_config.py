@@ -7,11 +7,11 @@ class Config(object):
 
     # The Telegram API things
     # Get these values from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH", "")
+    APP_ID = int(os.environ.get("APP_ID", "28837889"))
+    API_HASH = os.environ.get("API_HASH", "9d5e9c5b8abcf8b7b930abd259de254e")
 
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "6510541968").split())
 
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
@@ -29,5 +29,5 @@ class Config(object):
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "")
     
     # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://nhcsbtsr:9ASGN4k4m5ooefn_YwoliPjoJ3uXY9Yv@lallah.db.elephantsql.com/nhcsbtsr")
     
